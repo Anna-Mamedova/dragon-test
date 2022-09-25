@@ -1,0 +1,55 @@
+.DragonsAccordion {
+    margin: 100px auto;
+    max-width: 1200px;
+}
+
+.DragonsAccordion h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.DragonsAccordion button {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.DragonsAccordion .dragonInfo p {
+    margin: 0;
+}
+
+.DragonsAccordion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.DragonsAccordion table {
+    width: 100%;
+}
+
+.DragonsAccordion tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+    line-height: 2;
+    font-weight:bold ;
+}
+
+.DragonsAccordion tr span {
+    opacity: 0.5;
+}
+
+.DragonsAccordion .dragonInfo {
+    margin: auto;
+}
+
+.DragonsAccordion .dragon-img {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:767px) {
+    .DragonsAccordion .dragonInfo {
+        margin-top:10px;
+    }
+}

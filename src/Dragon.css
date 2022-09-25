@@ -1,8 +1,7 @@
 .Dragon {
     max-width: 1200px;
     min-height: 580px;
-    margin: 120px auto;
-    border: 1px solid rgb(255, 255, 255);
+    margin: 130px auto;
 }
 
 .Dragon h1 {
