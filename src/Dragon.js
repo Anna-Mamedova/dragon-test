@@ -20,23 +20,27 @@ export default function Dragon() {
         return(
             <div className="Dragon row">
                 <DragonImage image = {dragonInfo.flickr_images} alt = {dragonInfo.name}/>
-                <div className="dragonInfo col-md">
+                <div className="dragonInfo col-lg">
                     <h1>{dragonInfo.name}</h1>
                     <p>{dragonInfo.description} Learn more on <a href={dragonInfo.wikipedia} target="_blank" rel="noreferrer">Wikipedia.</a></p>
                     <br />
                     <table>
 						<tbody>
 							<tr>
-								<td>Maiden launch</td>
+								<td className="text-start">Maiden launch</td>
 								<td className="text-end">{dragonInfo.first_flight}</td>
 							</tr> 
-							<tr> 
-								<td>Dry mass</td>
-								<td className="text-end">{dragonInfo.dry_mass_kg}kg <span>/ {dragonInfo.dry_mass_lb}lb</span></td>
+                            <tr>
+								<td className="text-start">Height</td>
+								<td className="text-end">{dragonInfo.height_w_trunk.meters} m <span>/ {dragonInfo.height_w_trunk.feet} ft</span></td>
 							</tr>
 							<tr>
-								<td>Diameter</td>
-								<td className="text-end">{dragonInfo.diameter.meters}m <span>/ {dragonInfo.diameter.feet}ft</span></td>
+								<td className="text-start">Diameter</td>
+								<td className="text-end">{dragonInfo.diameter.meters} m <span>/ {dragonInfo.diameter.feet} ft</span></td>
+							</tr>
+							<tr> 
+								<td className="text-start">Dry mass</td>
+								<td className="text-end">{dragonInfo.dry_mass_kg} kg <span>/ {dragonInfo.dry_mass_lb} lb</span></td>
 							</tr>
 						</tbody>
 					</table>

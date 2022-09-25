@@ -1,0 +1,23 @@
+.AccordionTable table {
+    width: 100%;
+}
+
+.AccordionTable tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+    line-height: 2.5;
+    font-weight:bold ;
+}
+
+.AccordionTable tr span {
+    opacity: 0.5;
+}
+
+.AccordionTable .dragonInfo {
+    margin: auto;
+}
+
+@media (max-width:767px) {
+    .AccordionTable table {
+        margin: 20px 0;
+    }
+}

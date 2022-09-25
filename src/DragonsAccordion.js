@@ -1,4 +1,5 @@
 import React from "react";
+import AccordionTable from "./AccordionTable"
 import "./DragonsAccordion.css"
 
 export default function DragonAccordion(props) {
@@ -13,31 +14,8 @@ export default function DragonAccordion(props) {
             </p>
             <div className="collapse multi-collapse mb-3" id="multiCollapseExample1">
                 <div className="card card-body bg-dark">
-                    <div className="row">
-                        <div className="col-md dragon-img">
-                        <img src={props.info[0].flickr_images[1]} alt = {props.info[0].name} className="img-fluid rounded"/>
-                        </div>
-                        <div className="col-md dragonInfo">
-                            <p>{props.info[0].description} Learn more on <a href={props.info[0].wikipedia} target="_blank" rel="noreferrer">Wikipedia.</a></p>
-                            <br />
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>Maiden launch</td>
-                                        <td className="text-end">{props.info[0].first_flight}</td>
-                                    </tr> 
-                                    <tr> 
-                                        <td>Dry mass</td>
-                                        <td className="text-end">{props.info[0].dry_mass_kg}kg <span>/ {props.info[0].dry_mass_lb}lb</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Diameter</td>
-                                        <td className="text-end">{props.info[0].diameter.meters}m <span>/ {props.info[0].diameter.feet}ft</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div> 
+                    <AccordionTable info = {props.info[0]} img ={props.info[0].flickr_images[1]}/>
+                    <p className="description">{props.info[0].description} Learn more on <a href={props.info[0].wikipedia} target="_blank" rel="noreferrer">Wikipedia.</a></p>
                 </div>
             </div>
             <p>
@@ -47,31 +25,8 @@ export default function DragonAccordion(props) {
             </p>
             <div className="collapse multi-collapse" id="multiCollapseExample2">
                 <div className="card card-body bg-dark">
-                    <div className="row">
-                        <div className="col-md dragon-img">
-                        <img src={props.info[1].flickr_images[0]} alt = {props.info[1].name} className="img-fluid rounded"/>
-                        </div>
-                        <div className="col-md dragonInfo">
-                            <p>{props.info[1].description} Learn more on <a href={props.info[1].wikipedia} target="_blank" rel="noreferrer">Wikipedia.</a></p>
-                            <br />
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td>Maiden launch</td>
-                                        <td className="text-end">{props.info[1].first_flight}</td>
-                                    </tr> 
-                                    <tr> 
-                                        <td>Dry mass</td>
-                                        <td className="text-end">{props.info[1].dry_mass_kg}kg <span>/ {props.info[1].dry_mass_lb}lb</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Diameter</td>
-                                        <td className="text-end">{props.info[1].diameter.meters}m <span>/ {props.info[1].diameter.feet}ft</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div> 
+                    <AccordionTable info = {props.info[1]} img ={props.info[1].flickr_images[0]}/>
+                    <p className="description">{props.info[1].description} Learn more on <a href={props.info[1].wikipedia} target="_blank" rel="noreferrer">Wikipedia.</a></p>
                 </div>
             </div>
         </div>

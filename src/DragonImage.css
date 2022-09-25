@@ -3,9 +3,15 @@
     align-items: center;
 }
 
-@media (max-width:767px) {
+@media (max-width:991px) {
     .DragonImage {
         padding: 0 40px;
+        min-height: 850px;
+    }
+}
+
+@media (max-width:767px) {
+    .DragonImage {
         min-height: 670px;
     }
 }
@@ -19,6 +25,6 @@
 @media (max-width:420px) {
     .DragonImage {
         min-height: 380px;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 }

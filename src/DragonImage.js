@@ -3,7 +3,7 @@ import "./DragonImage.css"
 
 export default function DragonImage(props) {
         return (
-            <div className="DragonImage col-md">
+            <div className="DragonImage col-lg">
                 <div id="carouselExampleControlsNoTouching" className="carousel slide" data-bs-touch="false">
                 <div className="carousel-inner">
                     <div className="carousel-item active">

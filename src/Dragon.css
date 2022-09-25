@@ -38,9 +38,41 @@
     font-size: 20px;
 }
 
+@media (max-width:991px) {
+    .Dragon {
+        margin: 80px auto;
+    }
+
+    .Dragon .dragonInfo {
+        padding: 0 40px;
+        text-align: center;
+    }
+}
+
 @media (max-width:767px) {
     .Dragon .dragonInfo {
-        padding: 40px;
         font-size: 16px;
+    }
+}
+
+@media (max-width:600px) {
+    .Dragon .dragonInfo {
+        padding: 0 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width:420px) {
+    .Dragon {
+        margin: 40px auto;
+    }
+
+    .Dragon .dragonInfo {
+        padding: 0 10px;
+    }
+
+    .Dragon h1 {
+        font-weight:bold ;
+        font-size: 35px;
     }
 }
