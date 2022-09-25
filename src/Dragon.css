@@ -1,0 +1,47 @@
+.Dragon {
+    max-width: 1200px;
+    min-height: 580px;
+    margin: 120px auto;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.Dragon h1 {
+    font-weight:bold ;
+    font-size: 50px;
+}
+
+.Dragon p {
+    margin: 0;
+}
+
+.Dragon a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Dragon table {
+    width: 100%;
+}
+
+.Dragon tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.308);
+    line-height: 2;
+    font-weight:bold ;
+}
+
+.Dragon tr span {
+    opacity: 0.5;
+}
+
+.Dragon .dragonInfo {
+    margin: auto;
+    font-size: 20px;
+}
+
+@media (max-width:767px) {
+    .Dragon .dragonInfo {
+        padding: 40px;
+        font-size: 16px;
+    }
+}

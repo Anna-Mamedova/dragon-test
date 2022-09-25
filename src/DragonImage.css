@@ -1,0 +1,26 @@
+.DragonImage {
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media (max-width:767px) {
+    .DragonImage {
+        padding: 0 40px;
+        min-height: 670px;
+    }
+}
+
+@media (max-width:600px) {
+    .DragonImage {
+        min-height: 520px;
+    }
+}
+
+@media (max-width:420px) {
+    .DragonImage {
+        min-height: 380px;
+        padding: 0 20px;
+    }
+}
