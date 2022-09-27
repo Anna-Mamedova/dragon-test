@@ -21,7 +21,7 @@ export default function Dragon() {
             <div className="Dragon row">
                 <DragonImage image = {dragonInfo.flickr_images} alt = {dragonInfo.name}/>
                 <div className="dragonInfo col-lg">
-                    <h1>{dragonInfo.name}</h1>
+                    <h2>{dragonInfo.name}</h2>
                     <p>{dragonInfo.description} Learn more on <a href={dragonInfo.wikipedia} target="_blank" rel="noreferrer">Wikipedia.</a></p>
                     <br />
                     <table>

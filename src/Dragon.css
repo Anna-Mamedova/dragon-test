@@ -6,7 +6,7 @@
 
 }
 
-.Dragon h1 {
+.Dragon h2 {
     font-weight:bold ;
     font-size: 50px;
 }
@@ -79,7 +79,7 @@
         padding: 0 15px;
     }
 
-    .Dragon h1 {
+    .Dragon h2 {
         font-weight:bold ;
         font-size: 35px;
     }
