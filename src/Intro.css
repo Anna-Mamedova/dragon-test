@@ -1,0 +1,23 @@
+.Intro {
+    background-image: url(dragon-spaceX.jpeg);
+    background-size: 150%;
+    margin: auto;
+    padding: 20% 0;
+    margin-bottom: 20%;
+}
+
+.Intro h1 {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.Intro p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width:600px) {
+    .Intro{
+        background-size: 200%;
+    }
+}

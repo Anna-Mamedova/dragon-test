@@ -1,6 +1,7 @@
 .DragonsAccordion {
-    margin: 130px auto;
+    margin: 20% auto;
     max-width: 1200px;
+    padding: 0 30px;
 }
 
 .DragonsAccordion h2 {
@@ -15,6 +16,10 @@
     font-weight: bold;
 }
 
+.DragonsAccordion img {
+    border: 1px solid white;
+}
+
 .DragonsAccordion .description{
     margin-top: 20px;
 }
@@ -23,6 +28,10 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.DragonsAccordion a:hover {
+    text-decoration: underline;
 }
 
 .DragonsAccordion .dragon-img {
@@ -47,7 +56,7 @@
         margin: 80px auto;
     }
     .DragonsAccordion {
-        padding: 10px;
+        padding: 20px;
     }
 }
 
@@ -56,7 +65,7 @@
         margin: 80px auto;
     }
     .DragonsAccordion {
-        padding: 0px;
+        padding: 5px;
     }
 
     .DragonsAccordion h2 {

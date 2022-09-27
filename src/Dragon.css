@@ -1,7 +1,9 @@
 .Dragon {
     max-width: 1200px;
     min-height: 580px;
-    margin: 130px auto;
+    margin: 0 auto;
+    padding: 0 20px;
+
 }
 
 .Dragon h1 {
@@ -17,6 +19,10 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.Dragon a:hover {
+    text-decoration: underline;
 }
 
 .Dragon table {
@@ -36,16 +42,18 @@
 .Dragon .dragonInfo {
     margin: auto;
     font-size: 20px;
+
 }
 
 @media (max-width:991px) {
     .Dragon {
         margin: 80px auto;
+        padding: 0;
     }
 
     .Dragon .dragonInfo {
-        padding: 0 40px;
         text-align: center;
+        padding: 0 40px;
     }
 }
 
@@ -57,7 +65,7 @@
 
 @media (max-width:600px) {
     .Dragon .dragonInfo {
-        padding: 0 20px;
+        padding: 0 30px;
         text-align: center;
     }
 }
@@ -68,7 +76,7 @@
     }
 
     .Dragon .dragonInfo {
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .Dragon h1 {
