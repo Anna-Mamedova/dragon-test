@@ -1,8 +1,8 @@
 import './App.css';
-import Header from "./Header"
-import Dragon from "./Dragon"
-import MoreDragons from "./MoreDragons"
-import Intro from "./Intro"
+import Header from "./components/Header"
+import Dragon from "./components/Dragon"
+import MoreDragons from "./components/MoreDragons"
+import Intro from "./components/Intro"
 
 function App() {
   return (

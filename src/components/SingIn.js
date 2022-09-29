@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function SingIn() {
+export default function SingIn(props) {
+
     return (
         <div>
-            <a href="/" className="link-light me-4" data-bs-toggle="modal" data-bs-target="#exampleModal-sing-in">
+            <a href="/" className={`link-light me-4 ${props.hide}`} data-bs-toggle="modal" data-bs-target="#exampleModal-sing-in">
             Sing in
             </a>
             <div className="modal fade" id="exampleModal-sing-in" tabIndex="-1" aria-labelledby="exampleModalLabel-sing-in" aria-hidden="true">
@@ -14,7 +15,7 @@ export default function SingIn() {
                             <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            <form>
+                            <form >
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputEmail-sing-in" className="form-label">Email address</label>
                                     <input type="email" className="form-control" id="exampleInputEmail-sing-in" aria-describedby="emailHelp"/>
@@ -27,8 +28,10 @@ export default function SingIn() {
                                     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
                                     <label className="form-check-label" htmlFor="exampleCheck-sing-in">Check me out</label>
                                 </div>
-                                <button type="submit" className="btn btn-secondary w-100">Sing In</button>
                             </form>
+                        </div>
+                        <div className="modal-footer">
+                            <button onClick={props.handleClick} type="button" className="btn btn-secondary w-100" data-bs-dismiss="modal">Sing In</button>
                         </div>
                     </div>
                 </div>

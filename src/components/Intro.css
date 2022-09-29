@@ -1,6 +1,7 @@
 .Intro {
     background-image: url(image/dragon-spaceX.jpeg);
-    background-size: 150%;
+    background-size: 1700px;
+    background-position:top;
     margin: auto;
     padding: 20% 0;
     margin-bottom: 20%;
@@ -18,7 +19,6 @@
 
 @media (max-width:991px) {
     .Intro{
-        background-size: 176%;
         padding-top: 55%;
         margin-bottom: 40%;
     }
@@ -34,17 +34,16 @@
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:600px) {
     .Intro{
-        background-size: 200%;
+        padding-top: 70%;
+        margin-bottom: 50%;
     }
 }
 
 @media (max-width:420px) {
     .Intro{
-        background-size: 230%;
         padding-top: 90%;
-        padding-bottom: 0;
         margin-bottom: 90%;
     }
 }

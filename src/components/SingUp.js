@@ -1,12 +1,13 @@
 import React from "react";
 
-export default function SingUp() {
+export default function SingUp(props) {
+
     return (
         <div>
-            <a href="/" className="link-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a href="/" className={`link-light me-4 ${props.hide}`} data-bs-toggle="modal" data-bs-target="#exampleModal-sing-up">
             Sing up
             </a>
-            <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="exampleModal-sing-up" tabIndex="-1" aria-labelledby="exampleModalLabel-sing-up" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content bg-dark">
                         <div className="modal-header">
@@ -41,8 +42,10 @@ export default function SingUp() {
                                     <input type="checkbox" className="form-check-input" id="exampleCheck"/>
                                     <label className="form-check-label" htmlFor="exampleCheck">Check me out</label>
                                 </div>
-                                <button type="submit" className="btn btn-secondary w-100">Sing Up</button>
                             </form>
+                        </div>
+                        <div className="modal-footer">
+                            <button onClick={props.handleClick} type="button" className="btn btn-secondary w-100" data-bs-dismiss="modal">Sing In</button>
                         </div>
                     </div>
                 </div>
