@@ -18,11 +18,11 @@ export default function LogIn(props) {
                             <form >
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputEmail-log-in" className="form-label">Email address</label>
-                                    <input onChange={props.handleEmail} type="email" className="form-control" id="exampleInputEmail-log-in" aria-describedby="emailHelp"/>
+                                    <input onInput={event => props.setEmail(event.target.value)} type="email" className="form-control" id="exampleInputEmail-log-in" aria-describedby="emailHelp"/>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputPassword-log-in" className="form-label">Password</label>
-                                    <input onChange={props.handlePassword} type="password" className="form-control" id="exampleInputPassword-log-in"/>
+                                    <input onInput={event => props.setPassword(event.target.value)} type="password" className="form-control" id="exampleInputPassword-log-in"/>
                                 </div>
                                 <div className="mb-3 form-check">
                                     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>

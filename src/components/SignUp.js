@@ -19,20 +19,20 @@ export default function SignUp(props) {
                             <div className="row mb-3">
                                 <div className="col">
                                     <label htmlFor="exampleInputFirstName-sign-up" className="form-label">First Name</label>
-                                    <input onChange={props.handleFirstName} type="text" className="form-control" id="exampleInputFirstName-sign-up" aria-label="First name"/>
+                                    <input onInput={event => props.setFirstName(event.target.value)} type="text" className="form-control" id="exampleInputFirstName-sign-up" aria-label="First name"/>
                                 </div>
                                 <div className="col">
                                     <label htmlFor="exampleInputLastName-sign-up" className="form-label">Last Name</label>
-                                    <input onChange={props.handleLastName} type="text" className="form-control" id="exampleInputLastName-sign-up" aria-label="Last name"/>
+                                    <input onInput={event => props.setLastName(event.target.value)} type="text" className="form-control" id="exampleInputLastName-sign-up" aria-label="Last name"/>
                                 </div>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputEmail-sign-up" className="form-label">Email address</label>
-                                    <input onChange={props.handleEmail} type="email" className="form-control" id="exampleInputEmail-sign-up" aria-describedby="emailHelp"/>
+                                    <input onInput={event => props.setEmail(event.target.value)} type="email" className="form-control" id="exampleInputEmail-sign-up" aria-describedby="emailHelp"/>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputPassword-sign-up" className="form-label">Password</label>
-                                    <input onChange={props.handlePassword} type="password" className="form-control" id="exampleInputPassword-sign-up"/>
+                                    <input onInput={event => props.setPassword(event.target.value)} type="password" className="form-control" id="exampleInputPassword-sign-up"/>
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="exampleInputPassword-repeat-sign-up" className="form-label">Repeat password</label>
@@ -42,7 +42,6 @@ export default function SignUp(props) {
                                     <input type="checkbox" className="form-check-input" id="exampleCheck"/>
                                     <label className="form-check-label" htmlFor="exampleCheck">Check me out</label>
                                 </div>
-                                {/* <button className="btn btn-primary" type="submit">Submit form</button> */}
                             </form>
                         </div>
                         <div className="modal-footer">
